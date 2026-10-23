@@ -18,7 +18,7 @@ Alleen wie in `DOCENTEN` staat, kan een kaart aftekenen. Sluit een student zelf 
 
 ```
 https://github.com/issues?q=org:Nova-College-Haarlem-Students+is:issue+is:open+label:aftekenen+sort:created-asc
-```
+```   
 
 Wie bovenaan staat, wacht het langst.
 

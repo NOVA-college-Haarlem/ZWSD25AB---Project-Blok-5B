@@ -46,7 +46,13 @@ open_kaart() {
     } | gh issue create --title "$(head -1 "$K/$n.md" | sed 's/^# //')" --body-file -
 }
 
-is_docent() { [[ ",${DOCENTEN// /}," == *",$1,"* ]]; }
+# GitHub-gebruikersnamen zijn niet hoofdlettergevoelig
+is_docent() {
+    local docenten wie
+    docenten=$(tr -d ' ' <<<",$DOCENTEN," | tr '[:upper:]' '[:lower:]')
+    wie=$(tr '[:upper:]' '[:lower:]' <<<"$1")
+    [[ $docenten == *",$wie,"* ]]
+}
 
 case $GITHUB_EVENT_NAME in
     push|workflow_dispatch)
