@@ -9,6 +9,17 @@ Het project wordt in 6 kaarten uitgedeeld als GitHub Issues, door `.github/workf
    - Waarde: de GitHub-gebruikersnamen van de docenten, gescheiden door komma's, bijvoorbeeld `docent1,docent2`
    - Repository access: alle repositories
 2. Controleer bij **Settings → Actions → General** van de organisatie dat Actions aan staat.
+3. Bij **Settings → Member privileges**:
+   - **Base permissions**: **No permission** of **Read** (anders kunnen studenten in elkaars repository pushen)
+   - **Repository creation**: **Public** aanvinken (anders kunnen studenten geen repository uit de template maken)
+
+## Maandag (vervangende docent)
+
+Studenten hebben nog geen toegang tot GitHub. Deel de nummers uit en noteer per student **nummer + GitHub-gebruikersnaam** (op papier of in een Teams-formulier), en geef die lijst aan de vaste docent. Studenten werken zelfstandig aan kaart 1 (de ERD) - zie het maandagblok bovenaan de README. Er wordt niet afgetekend.
+
+## Vóór dinsdag (vaste docent)
+
+Nodig elke gebruikersnaam uit via **People → Invite member** (rol: Member). Studenten accepteren dinsdag de uitnodiging en volgen dan de setup in de README.
 
 Alleen wie in `DOCENTEN` staat, kan een kaart aftekenen. Sluit een student zelf een kaart, dan heropent de workflow hem.
 

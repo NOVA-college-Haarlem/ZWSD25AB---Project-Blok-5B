@@ -1,5 +1,12 @@
 # Eindproject Blok 5B (Hoofdstuk 1 t/m 7 + SQL)
 
+> 📅 **Maandag: nog geen repository.** Je krijgt pas dinsdag toegang tot GitHub. Doe vandaag dit:
+> 1. Geef je **nummer** en je **GitHub-gebruikersnaam** aan je docent.
+> 2. Zoek in [Studentverdeling.md](Studentverdeling.md) je thema op bij je nummer.
+> 3. Lees **[kaart 1](.github/kaarten/1.md)** en maak je ERD in [dbdiagram.io](https://dbdiagram.io). Log daar in, zodat je ERD bewaard blijft.
+>
+> Dinsdag maak je je repository aan (zie *Project setup*), zet je je ERD erin en typ je `/klaar` op kaart 1.
+
 ## 📋 Wat ga je doen?
 
 Je bouwt in 4,5 dag een complete webapplicatie voor een **nieuwe opdrachtgever**. Je laat zien dat je alles uit **Hoofdstuk 1 t/m 7** beheerst én de **SQL-stof** van dit blok kunt toepassen: kolomfuncties, `GROUP BY`/`HAVING`, `DISTINCT`, `ORDER BY` en `LEFT JOIN`.
@@ -16,9 +23,6 @@ Je krijgt de opdracht niet in één keer, maar in **6 kaarten**. Elke kaart vers
 4. De volgende kaart verschijnt automatisch. Nog niet goed? Dan krijg je feedback op de kaart - pas aan en typ opnieuw `/klaar`.
 
 Wacht je op je docent? Kijk alvast vooruit in je thema, of help een klasgenoot.
-
-> 📅 **Maandag** werk je zelfstandig aan kaart 1 - er wordt die dag nog niet afgetekend. Typ wel `/klaar` als je klaar bent: dinsdagochtend tekent je docent af in de volgorde van de wachtrij.
-
 ## 🎯 Thema's
 
 Je krijgt één van de zes thema's toegewezen - zie **[Studentverdeling.md](Studentverdeling.md)**. Je docent geeft je een nummer; bij dat nummer staat jouw thema. De technische eisen zijn voor alle thema's **exact gelijk**.
@@ -34,14 +38,14 @@ Je krijgt één van de zes thema's toegewezen - zie **[Studentverdeling.md](Stud
 
 | Dag | Kaart |
 |-----|-------|
-| **Maandag** | *Ochtend:* toetsen rekenen en AKT. *Middag:* project opzetten en **kaart 1** (ERD), zelfstandig |
-| **Dinsdag** | *Ochtend:* kaart 1 aftekenen. Daarna **kaart 2** (database) en **kaart 3** (bezoeker) |
+| **Maandag** | *Ochtend:* toetsen rekenen en AKT. *Middag:* nummer en GitHub-naam doorgeven, **kaart 1** (ERD) zelfstandig |
+| **Dinsdag** | *Ochtend:* project opzetten, ERD erin, kaart 1 aftekenen. Daarna **kaart 2** (database) en **kaart 3** (bezoeker) |
 | **Woensdag** | **Kaart 4** (klant) |
 | **Donderdag** | **Kaart 5** (medewerker en admin) |
 | **Vrijdag** | **Kaart 6** (afronden) - **aan het einde van de dag moet kaart 6 afgetekend zijn** |
 | **Week erna** | Mondeling assessment |
 
-> ⚠️ **Vrijdag is de deadline.** Zonder afgetekende kaart 6 kun je de week erna niet mondeling beoordeeld worden. Je hebt maar een halve maandag - zorg dat kaart 1 maandag af is en je `/klaar` hebt getypt, dan word je dinsdag als eerste afgetekend.
+> ⚠️ **Vrijdag is de deadline.** Zonder afgetekende kaart 6 kun je de week erna niet mondeling beoordeeld worden. Je hebt maar een halve maandag - zorg dat je ERD maandag af is, dan kun je dinsdag meteen `/klaar` typen en word je als eerste afgetekend.
 
 ## 🛠️ Project setup
 
