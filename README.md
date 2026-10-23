@@ -8,7 +8,7 @@ Het thema is nieuw: geen van de thema's uit 5A komt terug. Je mag je **eigen cod
 
 ## 🃏 Zo werkt dit project: kaarten
 
-Je krijgt de opdracht niet in één keer, maar in **6 kaarten**, plus een oefenkaart 0 om het systeem te leren kennen. Elke kaart verschijnt als **Issue** in je repository (tabblad **Issues** op GitHub).
+Je krijgt de opdracht niet in één keer, maar in **6 kaarten**. Elke kaart verschijnt als **Issue** in je repository (tabblad **Issues** op GitHub).
 
 1. Lees de kaart en werk hem af.
 2. Klaar? Typ `/klaar` als reactie op de kaart. Je komt dan in de wachtrij van je docent.
@@ -17,9 +17,11 @@ Je krijgt de opdracht niet in één keer, maar in **6 kaarten**, plus een oefenk
 
 Wacht je op je docent? Kijk alvast vooruit in je thema, of help een klasgenoot.
 
+> 📅 **Maandag** werk je zelfstandig aan kaart 1 - er wordt die dag nog niet afgetekend. Typ wel `/klaar` als je klaar bent: dinsdagochtend tekent je docent af in de volgorde van de wachtrij.
+
 ## 🎯 Thema's
 
-Je krijgt één van de zes thema's toegewezen - zie **[Studentverdeling.md](Studentverdeling.md)** (dat doe je op kaart 0). De technische eisen zijn voor alle thema's **exact gelijk**.
+Je krijgt één van de zes thema's toegewezen - zie **[Studentverdeling.md](Studentverdeling.md)**. Je docent geeft je een nummer; bij dat nummer staat jouw thema. De technische eisen zijn voor alle thema's **exact gelijk**.
 
 1. [Dierenasiel](projects/Dierenasiel.md) - dierenasiel Pootjes & Co
 2. [Fietsverhuur](projects/Fietsverhuur.md) - fietsverhuur Trapkracht
@@ -32,14 +34,14 @@ Je krijgt één van de zes thema's toegewezen - zie **[Studentverdeling.md](Stud
 
 | Dag | Kaart |
 |-----|-------|
-| **Maandag** | *Ochtend:* toetsen rekenen en AKT. *Middag:* project opzetten, **kaart 0** (oefenkaart) en **kaart 1** (ERD) |
-| **Dinsdag** | **Kaart 2** (database) en **kaart 3** (bezoeker) |
+| **Maandag** | *Ochtend:* toetsen rekenen en AKT. *Middag:* project opzetten en **kaart 1** (ERD), zelfstandig |
+| **Dinsdag** | *Ochtend:* kaart 1 aftekenen. Daarna **kaart 2** (database) en **kaart 3** (bezoeker) |
 | **Woensdag** | **Kaart 4** (klant) |
 | **Donderdag** | **Kaart 5** (medewerker en admin) |
 | **Vrijdag** | **Kaart 6** (afronden) - **aan het einde van de dag moet kaart 6 afgetekend zijn** |
 | **Week erna** | Mondeling assessment |
 
-> ⚠️ **Vrijdag is de deadline.** Zonder afgetekende kaart 6 kun je de week erna niet mondeling beoordeeld worden. Je hebt maar een halve maandag - zorg dat kaart 1 maandag afgetekend is, anders begin je dinsdag met een achterstand.
+> ⚠️ **Vrijdag is de deadline.** Zonder afgetekende kaart 6 kun je de week erna niet mondeling beoordeeld worden. Je hebt maar een halve maandag - zorg dat kaart 1 maandag af is en je `/klaar` hebt getypt, dan word je dinsdag als eerste afgetekend.
 
 ## 🛠️ Project setup
 
@@ -53,7 +55,9 @@ Deze repository is een template met een kant-en-klare Docker-omgeving (PHP 8.5 +
 6. Open de terminal en run `git clone <PASTE URL>`.
 7. Open het project in VS Code.
 8. Verander in `.env` de naam `MYSQL_DATABASE` van "testdb" naar de naam van je project.
-9. Commit en push. Binnen een minuut staat **kaart 0** bij **Issues**. Daar lees je wat je verder moet doen.
+9. Zoek in [Studentverdeling.md](Studentverdeling.md) je thema op bij het nummer dat je van je docent hebt gekregen. Maak in de hoofdmap een bestand `thema.txt` met daarin alleen de naam uit de kolom **thema.txt**, bijvoorbeeld `Camping`.
+10. Commit en push. Binnen een minuut staat **kaart 1** bij **Issues**.
+11. Run in de terminal `docker compose up -d` en controleer of de adressen hieronder werken.
 
 ### Beschikbare applicaties
 
