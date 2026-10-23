@@ -22,7 +22,7 @@ Je krijgt één van de zes thema's toegewezen - zie **[Studentverdeling.md](Stud
 | Dag | Wat |
 |-----|-----|
 | **Maandag** | *Ochtend:* toetsen rekenen en AKT. *Middag:* project opzetten, ERD maken (`docs/erd.png`) en **laten aftekenen** |
-| **Dinsdag** | `sql/database.sql` schrijven (tabellen + testdata), daarna bezoeker: overzicht, detail, filter, sorteren |
+| **Dinsdag** | Database opbouwen vanuit je ERD + testdata, exporteren naar `sql/database.sql` (zie *Van ERD naar database*), daarna bezoeker: overzicht, detail, filter, sorteren |
 | **Woensdag** | Klant: registreren, inloggen, kernactie via AJAX, eigen overzicht, eigen gegevens aanpassen |
 | **Donderdag** | Medewerker: toevoegen, aanpassen, soft delete, overzichten met `LEFT JOIN`, statistiekenpagina, logboek |
 | **Vrijdag** | Error pages, `try`/`catch`, SQL-dossier afmaken - **aan het einde van de dag laat je alles aftekenen** |
@@ -64,7 +64,7 @@ In het verhaal van de opdrachtgever staan **geen tabellen, kolommen of relaties*
 
 ### ERD (maandagmiddag)
 
-Voordat je één regel code schrijft, maak je een **ERD** (Entity Relationship Diagram) van je database. Gebruik [dbdiagram.io](https://dbdiagram.io) of [draw.io](https://draw.io) en lever het op als `docs/erd.png` in je repository.
+Voordat je één regel code schrijft, maak je een **ERD** (Entity Relationship Diagram) van je database. Gebruik [dbdiagram.io](https://dbdiagram.io) en lever het op als `docs/erd.png` in je repository. Bewaar ook de DBML-code (de tekst links in dbdiagram) als `docs/erd.dbml` - daarmee bouw je dinsdag je database op.
 
 Je ERD bevat:
 - Alle **tabellen** (entiteiten) met hun **kolommen** en **datatypes**
@@ -80,13 +80,30 @@ Werkwijze:
 
 > ✅ **Laat je ERD op maandagmiddag aftekenen voordat je gaat bouwen.** Verander je later in de week je database? Pas dan ook je ERD aan - ERD en `sql/database.sql` moeten aan het eind met elkaar kloppen.
 
+### Van ERD naar database (dinsdag)
+
+Je hoeft je database niet met de hand in SQL te schrijven. Je ERD is het ontwerp; de SQL laat je genereren.
+
+1. **Tabellen maken** - kies in dbdiagram.io **Export → MySQL**. Je krijgt een `.sql`-bestand met alle `CREATE TABLE`'s, primary keys, foreign keys en `NULL`/`NOT NULL`. Importeer dat in PhpMyAdmin via het tabblad **Importeren**.
+2. **Testdata maken** - laat AI de `INSERT`'s schrijven. Geef je DBML-code mee en vertel precies wat je nodig hebt, bijvoorbeeld:
+   > *Hier is mijn DBML: [plak je DBML]. Schrijf MySQL INSERT-statements met testdata. Vul eerst de tabellen zonder foreign key. Ik wil: de rollen klant, medewerker en admin; 1 admin, 2 medewerkers en 5 klanten; minimaal 10 rijen in [hoofdtabel]; een paar rijen waar [NULL-kolom] leeg is; en een paar [items] zonder [koppeling], voor mijn LEFT JOIN-lijst. Gebruik voor elk wachtwoord deze hash: [plak hash].*
+
+   Een wachtwoord-hash maak je zelf, AI kan dat niet betrouwbaar. Run in de terminal:
+   ```bash
+   docker compose exec web php -r "echo password_hash('Welkom123', PASSWORD_DEFAULT);"
+   ```
+   Voer de `INSERT`'s uit in PhpMyAdmin (tabblad **SQL**). Klopt er iets niet, pas het dan aan in PhpMyAdmin.
+3. **Opslaan in je repository** - kies in PhpMyAdmin je database → **Exporteren** → **Snel** → **SQL**, en sla het bestand op als `sql/database.sql`. Exporteer opnieuw als je later in de week je database of testdata aanpast.
+
+> 💡 Laat AI **niet** je ERD of tabellen bedenken. Het ontwerp - welke tabellen, waar de foreign keys zitten, welke kolommen `NULL` mogen zijn - moet je op het mondeling zelf kunnen uitleggen.
+
 ## 📐 Technische eisen
 
 ### Database (SQL les 5 en 6)
 - Minimaal **4 tabellen**, waarvan minimaal 2 met een **foreign key**
 - Bij elke kolom een bewuste keuze voor `NULL` of `NOT NULL` - je kunt bij elke `NULL`-kolom uitleggen waarom die leeg mag zijn
 - Geld als `DECIMAL(10,2)`, nooit als `FLOAT`
-- Een bestand `sql/database.sql` dat je hele database vanaf nul opbouwt: eerst alle `CREATE TABLE`'s, dan de testdata - **eerst** de tabellen zonder foreign key, **daarna** de tabellen met foreign key
+- Een export uit PhpMyAdmin als `sql/database.sql`, waarmee je hele database (tabellen + testdata) vanaf nul op te bouwen is
 - Genoeg testdata om je statistieken en filters te kunnen laten zien: minimaal 10 rijen in je hoofdtabel, en een paar rijen waar een `NULL`-kolom echt leeg is
 
 ### Gebruikers en rollen
@@ -100,11 +117,11 @@ In elk thema zijn er drie soorten gebruikers: een **klant** (of lid, gast, spele
 | admin | alles wat een medewerker mag, plus de **statistiekenpagina** en het **logboek** |
 
 Een admin is dus geen aparte soort mens, maar een **gebruiker met een andere rol**. Dat leg je zo vast in je database:
-- Een tabel `roles` met de rollen (`id`, `name`). Deze tabel heeft geen foreign key, dus die vul je in `database.sql` als **eerste**.
+- Een tabel `roles` met de rollen (`id`, `name`). Deze tabel heeft geen foreign key, dus die vul je als **eerste**.
 - Eén tabel `users` voor **alle** gebruikers, met een kolom `role_id` als **foreign key** naar `roles`. Een rol heeft veel gebruikers, een gebruiker heeft één rol: een **één-op-veel** relatie.
 - **Geen** aparte tabellen als `admins`, `medewerkers` of `klanten`, en **geen** rol als losse tekst in `users`.
 - Wie zich registreert, krijgt op de server automatisch de rol klant - de rol komt **nooit** uit het formulier.
-- Medewerkers en de admin zet je in je testdata in `database.sql`.
+- Medewerkers en de admin zet je in je testdata.
 
 Bij het inloggen haal je de naam van de rol op met een `LEFT JOIN` en zet je die in de sessie, net als in Hoofdstuk 5:
 
@@ -167,10 +184,10 @@ Het dossier bevat minimaal:
 ## ✅ Checklist (aftekenen op vrijdag)
 
 **Database en SQL**
-- [ ] ERD afgetekend (maandagmiddag) en opgeleverd als `docs/erd.png`
+- [ ] ERD afgetekend (maandagmiddag) en opgeleverd als `docs/erd.png` + `docs/erd.dbml`
 - [ ] ERD bevat PK's, FK's, kardinaliteit (1/N) en `NULL`-kolommen; alleen één-op-veel relaties
 - [ ] ERD klopt met `sql/database.sql`
-- [ ] `sql/database.sql` bouwt de hele database zonder fouten op
+- [ ] `sql/database.sql` (export uit PhpMyAdmin) bouwt de hele database zonder fouten op
 - [ ] Minimaal 4 tabellen, minimaal 2 foreign keys, bewuste `NULL`/`NOT NULL`-keuzes
 - [ ] `sql/queries.sql` compleet volgens het SQL-dossier hierboven
 
