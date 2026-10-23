@@ -15,9 +15,11 @@ Het project wordt in 6 kaarten uitgedeeld als GitHub Issues, door `.github/workf
 
 ## Maandag (vervangende docent)
 
-Studenten hebben nog geen toegang tot GitHub. Deel de nummers uit en noteer per student **nummer + GitHub-gebruikersnaam** (op papier of in een Teams-formulier). Studenten werken aan kaart 1 (de ERD) - zie het maandagblok bovenaan de README.
+Studenten hebben nog geen toegang tot GitHub. Deel de nummers uit. Studenten vullen het [aanmeldformulier](https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=vyw7T26xI0KVVMZ_usI9afL2mzJ0VrJNsJ-qckXhwwNURVVLVzBPOVk2MzVKNzNQNFhYU01UTEdHMi4u) in (nummer, GitHub-gebruikersnaam, thema) en werken aan kaart 1 (de ERD) - zie het maandagblok bovenaan de README.
 
-**Aftekenen**: bekijk de ERD op het scherm van de student aan de hand van *Klaar als* op [kaart 1](kaarten/1.md). Goed? Zet een vinkje achter de student op de lijst. Geef de lijst daarna aan de vaste docent.
+**Excel-lijst**: open het formulier in Forms → **Antwoorden** → **Openen in Excel**. Voeg rechts een kolom **ERD afgetekend** toe. Controleer per rij of het thema klopt met het nummer in `Studentverdeling.md`.
+
+**Aftekenen**: bekijk de ERD op het scherm van de student aan de hand van *Klaar als* op [kaart 1](kaarten/1.md). Goed? Zet `ja` in de kolom **ERD afgetekend**. Twijfel? Laat de kolom leeg en zet er een korte notitie bij. De vaste docent gebruikt dezelfde Excel dinsdag om iedereen uit te nodigen.
 
 ## Dinsdag (vaste docent)
 
