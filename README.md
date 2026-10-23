@@ -2,7 +2,7 @@
 
 > 📅 **Maandag: nog geen repository.** Je krijgt pas dinsdag toegang tot GitHub. Doe vandaag dit:
 > 1. Zoek in [Studentverdeling.md](Studentverdeling.md) je thema op bij het nummer dat je van je docent krijgt.
-> 2. Vul **[dit formulier](https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=vyw7T26xI0KVVMZ_usI9afL2mzJ0VrJNsJ-qckXhwwNURVVLVzBPOVk2MzVKNzNQNFhYU01UTEdHMi4u)** in met je nummer, je GitHub-gebruikersnaam en je thema.
+> 2. Vul **[dit formulier](https://forms.cloud.microsoft/e/yqL8zsuq8w)** in met je nummer, je GitHub-gebruikersnaam en je thema.
 > 3. Lees **[kaart 1](.github/kaarten/1.md)** en maak je ERD in [dbdiagram.io](https://dbdiagram.io). Log daar in, zodat je ERD bewaard blijft.
 > 4. Klaar? Laat je ERD op je scherm **aftekenen** door je docent.
 >
