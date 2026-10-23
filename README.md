@@ -36,14 +36,15 @@ Je krijgt één van de zes thema's toegewezen - zie **[Studentverdeling.md](Stud
 
 Deze repository is een template met een kant-en-klare Docker-omgeving (PHP 8.5 + Apache, MariaDB, PhpMyAdmin en Mailpit).
 
-1. Klik op GitHub op de groene knop **Use this template** en kies **Create a new repository**.
-2. Geef je repository een passende naam, bijvoorbeeld `dierenasiel` of `camping`.
-3. Kopieer de URL van je nieuwe repository (via de groene knop **Code**).
-4. Open de map waarin je je projecten bewaart met VS Code.
-5. Open de terminal en run `git clone <PASTE URL>`.
-6. Open het project in VS Code.
-7. Verander in `.env` de naam `MYSQL_DATABASE` van "testdb" naar de naam van je project.
-8. Open de terminal en run `docker compose up -d`.
+1. Fork deze repository naar je eigen GitHub-account.
+2. Klik op GitHub op de groene knop **<>Code** en kies **Create a new repository**.
+3. Geef je repository een passende naam, bijvoorbeeld `dierenasiel` of `camping`.
+4. Kopieer de URL van je nieuwe repository (via de groene knop **Code**).
+5. Open de map waarin je je projecten bewaart met VS Code.
+6. Open de terminal en run `git clone <PASTE URL>`.
+7. Open het project in VS Code.
+8. Verander in `.env` de naam `MYSQL_DATABASE` van "testdb" naar de naam van je project.
+9. Open de terminal en run `docker compose up -d`.
 
 ### Beschikbare applicaties
 
