@@ -15,7 +15,13 @@ Het project wordt in 6 kaarten uitgedeeld als GitHub Issues, door `.github/workf
 
 ## Maandag (vervangende docent)
 
-Studenten hebben nog geen toegang tot GitHub. Deel de nummers uit en noteer per student **nummer + GitHub-gebruikersnaam** (op papier of in een Teams-formulier), en geef die lijst aan de vaste docent. Studenten werken zelfstandig aan kaart 1 (de ERD) - zie het maandagblok bovenaan de README. Er wordt niet afgetekend.
+Studenten hebben nog geen toegang tot GitHub. Deel de nummers uit en noteer per student **nummer + GitHub-gebruikersnaam** (op papier of in een Teams-formulier). Studenten werken aan kaart 1 (de ERD) - zie het maandagblok bovenaan de README.
+
+**Aftekenen**: bekijk de ERD op het scherm van de student aan de hand van *Klaar als* op [kaart 1](kaarten/1.md). Goed? Zet een vinkje achter de student op de lijst. Geef de lijst daarna aan de vaste docent.
+
+## Dinsdag (vaste docent)
+
+Studenten met een vinkje typen `/klaar` zodra hun ERD in hun repository staat. Sluit hun kaart 1 dan meteen als **completed** - beoordelen is maandag al gebeurd.
 
 ## Vóór dinsdag (vaste docent)
 

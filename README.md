@@ -4,8 +4,9 @@
 > 1. Geef je **nummer** en je **GitHub-gebruikersnaam** aan je docent.
 > 2. Zoek in [Studentverdeling.md](Studentverdeling.md) je thema op bij je nummer.
 > 3. Lees **[kaart 1](.github/kaarten/1.md)** en maak je ERD in [dbdiagram.io](https://dbdiagram.io). Log daar in, zodat je ERD bewaard blijft.
+> 4. Klaar? Laat je ERD op je scherm **aftekenen** door je docent.
 >
-> Dinsdag maak je je repository aan (zie *Project setup*), zet je je ERD erin en typ je `/klaar` op kaart 1.
+> Dinsdag maak je je repository aan (zie *Project setup*), zet je je ERD erin en typ je `/klaar` op kaart 1. Is je ERD maandag al afgetekend, dan sluit je docent kaart 1 meteen.
 
 ## 📋 Wat ga je doen?
 
@@ -38,14 +39,14 @@ Je krijgt één van de zes thema's toegewezen - zie **[Studentverdeling.md](Stud
 
 | Dag | Kaart |
 |-----|-------|
-| **Maandag** | *Ochtend:* toetsen rekenen en AKT. *Middag:* nummer en GitHub-naam doorgeven, **kaart 1** (ERD) zelfstandig |
-| **Dinsdag** | *Ochtend:* project opzetten, ERD erin, kaart 1 aftekenen. Daarna **kaart 2** (database) en **kaart 3** (bezoeker) |
+| **Maandag** | *Ochtend:* toetsen rekenen en AKT. *Middag:* nummer en GitHub-naam doorgeven, **kaart 1** (ERD) maken en **laten aftekenen** |
+| **Dinsdag** | *Ochtend:* project opzetten, ERD erin, kaart 1 sluiten. Daarna **kaart 2** (database) en **kaart 3** (bezoeker) |
 | **Woensdag** | **Kaart 4** (klant) |
 | **Donderdag** | **Kaart 5** (medewerker en admin) |
 | **Vrijdag** | **Kaart 6** (afronden) - **aan het einde van de dag moet kaart 6 afgetekend zijn** |
 | **Week erna** | Mondeling assessment |
 
-> ⚠️ **Vrijdag is de deadline.** Zonder afgetekende kaart 6 kun je de week erna niet mondeling beoordeeld worden. Je hebt maar een halve maandag - zorg dat je ERD maandag af is, dan kun je dinsdag meteen `/klaar` typen en word je als eerste afgetekend.
+> ⚠️ **Vrijdag is de deadline.** Zonder afgetekende kaart 6 kun je de week erna niet mondeling beoordeeld worden. Je hebt maar een halve maandag - zorg dat je ERD maandag afgetekend is, anders begin je dinsdag met een achterstand.
 
 ## 🛠️ Project setup
 
