@@ -8,7 +8,7 @@ Het thema is nieuw: geen van de thema's uit 5A komt terug. Je mag je **eigen cod
 
 ## 🃏 Zo werkt dit project: kaarten
 
-Je krijgt de opdracht niet in één keer, maar in **6 kaarten**. Elke kaart verschijnt als **Issue** in je repository (tabblad **Issues** op GitHub).
+Je krijgt de opdracht niet in één keer, maar in **6 kaarten**, plus een oefenkaart 0 om het systeem te leren kennen. Elke kaart verschijnt als **Issue** in je repository (tabblad **Issues** op GitHub).
 
 1. Lees de kaart en werk hem af.
 2. Klaar? Typ `/klaar` als reactie op de kaart. Je komt dan in de wachtrij van je docent.
@@ -19,7 +19,7 @@ Wacht je op je docent? Kijk alvast vooruit in je thema, of help een klasgenoot.
 
 ## 🎯 Thema's
 
-Je krijgt één van de zes thema's toegewezen - zie **[Studentverdeling.md](Studentverdeling.md)**. De technische eisen zijn voor alle thema's **exact gelijk**.
+Je krijgt één van de zes thema's toegewezen - zie **[Studentverdeling.md](Studentverdeling.md)** (dat doe je op kaart 0). De technische eisen zijn voor alle thema's **exact gelijk**.
 
 1. [Dierenasiel](projects/Dierenasiel.md) - dierenasiel Pootjes & Co
 2. [Fietsverhuur](projects/Fietsverhuur.md) - fietsverhuur Trapkracht
@@ -32,7 +32,7 @@ Je krijgt één van de zes thema's toegewezen - zie **[Studentverdeling.md](Stud
 
 | Dag | Kaart |
 |-----|-------|
-| **Maandag** | *Ochtend:* toetsen rekenen en AKT. *Middag:* project opzetten en **kaart 1** (ERD) |
+| **Maandag** | *Ochtend:* toetsen rekenen en AKT. *Middag:* project opzetten, **kaart 0** (oefenkaart) en **kaart 1** (ERD) |
 | **Dinsdag** | **Kaart 2** (database) en **kaart 3** (bezoeker) |
 | **Woensdag** | **Kaart 4** (klant) |
 | **Donderdag** | **Kaart 5** (medewerker en admin) |
@@ -46,16 +46,14 @@ Je krijgt één van de zes thema's toegewezen - zie **[Studentverdeling.md](Stud
 Deze repository is een template met een kant-en-klare Docker-omgeving (PHP 8.5 + Apache, MariaDB, PhpMyAdmin en Mailpit).
 
 1. Klik op GitHub op de groene knop **Use this template** en kies **Create a new repository**.
-2. Kies bij **Owner** de organisatie van je klas (niet je eigen account) en geef je repository een passende naam, bijvoorbeeld `camping-jouwnaam`.
+2. Kies bij **Owner** de organisatie `Nova-College-Haarlem-Students` (**niet** je eigen account), anders ziet je docent je kaarten niet. Noem je repository `blok5b-` met daarachter je GitHub-naam, bijvoorbeeld `blok5b-pietjansen`.
 3. Ga in je nieuwe repository naar het tabblad **Actions**. Zie je een groene knop om workflows aan te zetten? Klik erop.
 4. Kopieer de URL van je repository (via de groene knop **Code**).
 5. Open de map waarin je je projecten bewaart met VS Code.
 6. Open de terminal en run `git clone <PASTE URL>`.
 7. Open het project in VS Code.
 8. Verander in `.env` de naam `MYSQL_DATABASE` van "testdb" naar de naam van je project.
-9. Maak in de hoofdmap een bestand `thema.txt` met daarin alleen de naam van je thema, bijvoorbeeld `Camping`.
-10. Commit en push. Binnen een minuut staat **kaart 1** bij **Issues**.
-11. Run in de terminal `docker compose up -d`.
+9. Commit en push. Binnen een minuut staat **kaart 0** bij **Issues**. Daar lees je wat je verder moet doen.
 
 ### Beschikbare applicaties
 

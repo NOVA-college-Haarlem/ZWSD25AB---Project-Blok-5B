@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Deelt de projectkaarten uit als GitHub Issues:
-#   push              -> Kaart 1, als er nog geen kaart is
+#   push              -> Kaart 0 (oefenkaart), als er nog geen kaart is
 #   /klaar op kaart   -> label "aftekenen" (de wachtrij van de docent)
 #   docent sluit kaart -> volgende kaart
 set -euo pipefail
@@ -56,7 +56,7 @@ is_docent() {
 
 case $GITHUB_EVENT_NAME in
     push|workflow_dispatch)
-        bestaat 1 || open_kaart 1
+        open_kaart 0
         ;;
 
     issue_comment)

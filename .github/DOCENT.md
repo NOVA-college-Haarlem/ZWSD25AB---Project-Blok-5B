@@ -36,12 +36,12 @@ https://github.com/issues?q=org:Nova-College-Haarlem-Students+is:issue+is:open+i
 
 | Gebeurtenis | Wat de workflow doet |
 |-------------|----------------------|
-| Student pusht (eerste keer) | Opent kaart 1 |
+| Student pusht (eerste keer) | Opent kaart 0 (oefenkaart) |
 | Student typt `/klaar` | Controleert `thema.txt`, zet label `aftekenen` |
 | Docent sluit kaart als completed | Opent de volgende kaart |
 | Student sluit kaart zelf | Heropent de kaart |
 
-- Kaartteksten: `.github/kaarten/1.md` t/m `6.md`. De eerste regel is de titel.
+- Kaartteksten: `.github/kaarten/0.md` t/m `6.md`. Kaart 0 is een oefenkaart: aftekenen als `thema.txt` klopt met `Studentverdeling.md` en Docker draait. De eerste regel is de titel.
 - Userstories per thema: `.github/kaarten/userstories/`. Ze komen op kaart 3 (bezoeker + developer), 4 (klant) en 5 (medewerker + admin), op basis van `thema.txt`.
 - De kaarten staan in de repository van de student. Wie in `.github` gaat zoeken, kan vooruitlezen.
-- Kaart 1 komt niet? Laat de student bij **Actions → Kaarten → Run workflow** de workflow handmatig starten.
+- Kaart 0 komt niet? Laat de student bij **Actions → Kaarten → Run workflow** de workflow handmatig starten.
