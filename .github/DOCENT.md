@@ -51,6 +51,10 @@ Wie bovenaan staat, wacht het langst.
 https://github.com/issues?q=org:Nova-College-Haarlem-Students+is:issue+is:open+in:title+Kaart
 ```
 
+## Mondeling
+
+Vragenpool voor studenten: [MONDELING.md](../MONDELING.md). Beoordelingsformulier: [BEOORDELINGSFORMULIER.md](BEOORDELINGSFORMULIER.md).
+
 ## Hoe het werkt
 
 | Gebeurtenis | Wat de workflow doet |

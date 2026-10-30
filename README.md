@@ -44,7 +44,7 @@ Je krijgt één van de zes thema's toegewezen - zie **[Studentverdeling.md](Stud
 | **Woensdag** | **Kaart 4** (klant) |
 | **Donderdag** | **Kaart 5** (medewerker en admin) |
 | **Vrijdag** | **Kaart 6** (afronden) - **aan het einde van de dag moet kaart 6 afgetekend zijn** |
-| **Week erna** | Mondeling assessment |
+| **Week erna** | Mondeling assessment - zie [MONDELING.md](MONDELING.md) |
 
 > ⚠️ **Vrijdag is de deadline.** Zonder afgetekende kaart 6 kun je de week erna niet mondeling beoordeeld worden. Je hebt maar een halve maandag - zorg dat je ERD maandag afgetekend is, anders begin je dinsdag met een achterstand.
 
