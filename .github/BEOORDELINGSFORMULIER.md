@@ -17,13 +17,13 @@
 
 **Vragen kiezen:** 3 vragen uit 3 verschillende onderdelen (A t/m E), minimaal één uit **B. SQL**. Kies vragen over onderdelen die de student gebouwd heeft. Wat niet gebouwd is, kost al punten bij functionaliteit.
 
-## Deel 1: Functionaliteit (max 5,0)
+## Deel 1: Functionaliteit (max 4,0)
 
-| Punten behaald | Max punten | Cijferdeel = behaald ÷ max × 5 |
+| Punten behaald | Max punten | Cijferdeel = behaald ÷ max × 4 |
 |----------------|------------|--------------------------------|
 | | | |
 
-## Deel 2: Vragen (max 5,0)
+## Deel 2: Vragen (max 6,0)
 
 | | Vraag nr. | 0 / 4 / 8 | Notitie |
 |---|-----------|-----------|---------|
@@ -38,7 +38,7 @@
 
 | Totaal punten | 0 | 4 | 8 | 12 | 16 | 20 | 24 |
 |---------------|---|---|---|----|----|----|----|
-| Cijferdeel | 0,0 | 0,8 | 1,7 | 2,5 | 3,3 | 4,2 | 5,0 |
+| Cijferdeel | 0,0 | 1,0 | 2,0 | 3,0 | 4,0 | 5,0 | 6,0 |
 
 ## Eindcijfer
 
